@@ -1,26 +1,26 @@
 package me.char321.nexcavate.items.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetComponent;
-import io.github.thebusybiscuit.slimefun4.core.attributes.MachineProcessHolder;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
-import io.github.thebusybiscuit.slimefun4.core.machines.MachineProcessor;
-import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
-import io.github.thebusybiscuit.slimefun4.implementation.handlers.SimpleBlockBreakHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.operations.CraftingOperation;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
+import com.github.drakescraft_labs.slimefun4.core.attributes.EnergyNetComponent;
+import com.github.drakescraft_labs.slimefun4.core.attributes.MachineProcessHolder;
+import com.github.drakescraft_labs.slimefun4.core.handlers.BlockPlaceHandler;
+import com.github.drakescraft_labs.slimefun4.core.machines.MachineProcessor;
+import com.github.drakescraft_labs.slimefun4.core.networks.energy.EnergyNetComponentType;
+import com.github.drakescraft_labs.slimefun4.implementation.handlers.SimpleBlockBreakHandler;
+import com.github.drakescraft_labs.slimefun4.implementation.operations.CraftingOperation;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
+import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
 import me.char321.nexcavate.items.ItemStacks;
 import me.char321.nexcavate.slimefun.NEAssembly;
 import me.char321.nexcavate.structure.Structure;
 import me.char321.nexcavate.util.Utils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
-import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
+import com.github.drakescraft_labs.slimefun4.legacy.Objects.handlers.BlockTicker;
+import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
+import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset;
+import com.github.drakescraft_labs.slimefun4.legacy.api.item_transport.ItemTransportFlow;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -59,7 +59,7 @@ public class PartExtractor extends NEAssembly implements MachineProcessHolder<Cr
             @Override
             public void onPlayerPlace(@Nonnull BlockPlaceEvent e) {
                 if (!e.getBlock().getWorld().getEnvironment().equals(World.Environment.NETHER)) {
-                    e.getPlayer().sendMessage(ChatColor.RED + "请将机器放置于下界中");
+                    e.getPlayer().sendMessage(ChatColor.RED + "Coloque la máquina en el Nether.");
                     e.setCancelled(true);
                     Utils.removeBlock(e.getBlock(), true);
                 }

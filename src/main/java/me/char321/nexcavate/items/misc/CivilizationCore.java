@@ -1,6 +1,6 @@
 package me.char321.nexcavate.items.misc;
 
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
+import com.github.drakescraft_labs.slimefun4.core.handlers.BlockPlaceHandler;
 import me.char321.nexcavate.slimefun.NEAssembly;
 import me.char321.nexcavate.structure.Structure;
 import me.char321.nexcavate.util.Utils;
@@ -32,44 +32,44 @@ public class CivilizationCore extends NEAssembly {
         player.playSound(player, Sound.BLOCK_END_PORTAL_SPAWN, 1, 1);
         Utils.runWithDelay(80L,
                 () -> {
-                    player.sendMessage(Utils.color("&d你放置了一个文明核心"));
+                    player.sendMessage(Utils.color("&dColocas un núcleo de civilización."));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&o什么？是谁把我从沉睡中唤醒？"));
+                    player.sendMessage(Utils.color("&9&o¿Qué? ¿Quién me despertó de mi sueño profundo?？"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_ADMIRING_ITEM, 1, 0.5f);
-                    player.sendMessage(Utils.color("&a&o等等...那是什么东西?"));
+                    player.sendMessage(Utils.color("&a&oetc....¿qué es eso??"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&o上面写着&e" + player.getName() + ""));
+                    player.sendMessage(Utils.color("&9&odice&e" + player.getName() + ""));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&o他们重建了...我们的文明。那些是我们的建筑工吗?"));
+                    player.sendMessage(Utils.color("&9&oellos reconstruyeron...nuestra civilización. ¿Son esos nuestros trabajadores de la construcción??"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_ADMIRING_ITEM, 1, 0.5f);
-                    player.sendMessage(Utils.color("&a&o他们是怎么得到建造它的零件的?"));
+                    player.sendMessage(Utils.color("&a&o¿Cómo consiguieron las piezas para construirlo??"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&o他们一定是从另一个世界穿越而来"));
+                    player.sendMessage(Utils.color("&9&oDeben haber viajado desde otro mundo."));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_ADMIRING_ITEM, 1, 0.5f);
-                    player.sendMessage(Utils.color("&a&o看到了吗？我告诉过你会有人来救我们的！我就知道！"));
+                    player.sendMessage(Utils.color("&a&o¿Viste eso? ¡Te dije que alguien vendría a salvarnos! lo sabía！"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&o是啊，当然。自从那次大规模灭绝以来，只花了大概179000年。"));
+                    player.sendMessage(Utils.color("&9&oSí, por supuesto. Desde esa extinción masiva, sólo ha sido necesario aproximadamente179000Año。"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_ADMIRING_ITEM, 1, 0.5f);
-                    player.sendMessage(Utils.color("&a&o嗯，你还是应该感激 &e" + player.getName() + "&a&o救了我们"));
+                    player.sendMessage(Utils.color("&a&oBueno, aún deberías estar agradecido. &e" + player.getName() + "&a&onos salvó"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&o当然了。我很高兴我们的文明在经历了几千年后还能继续存在。"));
+                    player.sendMessage(Utils.color("&9&oPor supuesto. Me alegro de que nuestra civilización siga existiendo después de miles de años.。"));
                 }, () -> {
 
                 }, () -> {
                     player.playSound(player, Sound.MUSIC_DISC_BLOCKS, 1, 1f);
-                    player.sendMessage(Utils.color("&e&l终章"));
+                    player.sendMessage(Utils.color("&e&lcapitulo final"));
                 }, () -> {
-                    player.sendMessage(Utils.color("&e&l感谢游玩!"));
+                    player.sendMessage(Utils.color("&e&lgracias por jugar!"));
                 }
         );
     }

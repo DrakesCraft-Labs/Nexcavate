@@ -1,6 +1,6 @@
 package me.char321.nexcavate.gui;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.char321.nexcavate.structure.Structure;
 import me.char321.nexcavate.structure.piece.StructurePiece;
 import me.char321.nexcavate.util.Utils;
@@ -29,7 +29,7 @@ public class StructureScreenHandler implements NEGUIInventoryHolder {
 
     public StructureScreenHandler(int size) {
         this.size = size;
-        this.inventory = Bukkit.createInventory(this, size * 9, "结构预览");
+        this.inventory = Bukkit.createInventory(this, size * 9, "Vista previa de la estructura");
     }
 
     @Override
@@ -57,7 +57,7 @@ public class StructureScreenHandler implements NEGUIInventoryHolder {
     }
 
     public void refresh() {
-        inventory.setItem(0, new CustomItemStack(Material.ARROW, "&f返回"));
+        inventory.setItem(0, new CustomItemStack(Material.ARROW, "&fdevolver"));
         inventory.setItem(9, display);
         for (int i = 18; i < size * 9; i += 9) {
             inventory.setItem(i, BACKGROUND);
@@ -67,12 +67,12 @@ public class StructureScreenHandler implements NEGUIInventoryHolder {
         }
         int layernum = 1;
         for (int i = size * 9 - 1; i > 0; i -= 9) {
-            ItemStack layerItem = new CustomItemStack(Material.SNOW, "&e层 " + layernum);
+            ItemStack layerItem = new CustomItemStack(Material.SNOW, "&ecapa " + layernum);
             if (layernum - 1 == layer) {
                 ItemMeta im = layerItem.getItemMeta();
-                im.addEnchant(Enchantment.DURABILITY, 1, true);
+                im.addEnchant(Enchantment.UNBREAKING, 1, true);
                 im.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                im.setDisplayName(im.getDisplayName() + ChatColor.GRAY + " (当前层数)");
+                im.setDisplayName(im.getDisplayName() + ChatColor.GRAY + " (Número de capa actual)");
                 layerItem.setItemMeta(im);
             }
             inventory.setItem(i, layerItem);
@@ -101,8 +101,8 @@ public class StructureScreenHandler implements NEGUIInventoryHolder {
             ItemMeta im = res.getItemMeta();
             ArrayList<String> lore = im.hasLore() ? new ArrayList<>(im.getLore()) : new ArrayList<>();
             lore.add("");
-            lore.add(Utils.color("&f在此放置一个&e物品架"));
-            lore.add(Utils.color("&f并将物品放入架内进行组装"));
+            lore.add(Utils.color("&fcoloca uno aquí&eEstante de artículos"));
+            lore.add(Utils.color("&fy coloque los artículos en el estante para su montaje."));
         }
 
         return res;

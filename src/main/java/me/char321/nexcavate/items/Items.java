@@ -1,9 +1,9 @@
 package me.char321.nexcavate.items;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.char321.nexcavate.Nexcavate;
 import me.char321.nexcavate.items.assemblers.Assembler;
 import me.char321.nexcavate.items.machines.BlackstoneCast;
@@ -69,8 +69,8 @@ public class Items {
     };
     public static final RecipeType DUMMY_TYPE = new RecipeType(Nexcavate.key("invalid"), new CustomItemStack(
             Material.BARRIER,
-            "&l&4当前无法查看配方!",
-            "&7请通过文明研究台查看配方"));
+            "&l&4Recetas actualmente no disponibles!",
+            "&7Consulte la receta a través del Escritorio de investigación de civilizaciones."));
 
     public static ResearchStation RESEARCH_LAB;
     public static ResearchStation RESEARCH_TABLE;
@@ -93,7 +93,7 @@ public class Items {
     public static CivilizationCore CIVILIZATION_CORE;
 
     public static void init() {
-        StructurePiece lantern = u(new CustomItemStack(LANTERN, "灯笼/灵魂灯笼"), mat(LANTERN), mat(SOUL_LANTERN));
+        StructurePiece lantern = u(new CustomItemStack(LANTERN, "linterna/Linterna del alma"), mat(LANTERN), mat(SOUL_LANTERN));
         RESEARCH_TABLE = new ResearchStation(ItemStacks.RESEARCH_TABLE, "NE_RESEARCH_TABLE", new Structure(new StructurePiece[][][]{
                 {
                         {mat(SMOOTH_QUARTZ), mat(SMOOTH_QUARTZ), mat(SMOOTH_QUARTZ)},
@@ -155,7 +155,7 @@ public class Items {
         PART_DRILL.register();
 
         StructurePiece any = new AnyStructurePiece();
-        StructurePiece extension = u(new CustomItemStack(POLISHED_BLACKSTONE_BRICKS, "组装机零件", "&7任意组装机零件或磨制黑石砖"), mat(POLISHED_BLACKSTONE_BRICKS));
+        StructurePiece extension = u(new CustomItemStack(POLISHED_BLACKSTONE_BRICKS, "Piezas de la máquina de montaje", "&7Cualquier pieza de ensamblador o ladrillos Blackstone molidos"), mat(POLISHED_BLACKSTONE_BRICKS));
         BASIC_ASSEMBLER = new Assembler(ItemStacks.BASIC_ASSEMBLER, "NE_BASIC_ASSEMBLER", new Structure(new StructurePiece[][][]{
                 {
                         {extension, extension, extension, extension, extension},

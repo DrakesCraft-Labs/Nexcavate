@@ -130,7 +130,7 @@ public class PlayerProgress {
     private void notifyPlayer() {
         Player p = Bukkit.getPlayer(this.player);
         if (p != null) {
-            p.sendMessage(Utils.color("&a您当前的研究已经完成！请打开Slimefun指南或研究站查看配方"));
+            p.sendMessage(Utils.color("&a¡Tu investigación actual está completa! por favor abreSlimefunGuía o estación de investigación para ver la receta."));
         }
     }
 

@@ -1,77 +1,77 @@
-# 文明复兴教程
+# Tutorial del Renacimiento de la Civilización
 
-## 启程
+## Partir
 
-在粘液科技指南里，有一个类别叫"文明复兴"<br>
-当你打开它的时候，你会发现大多数物品是锁着的，仅有文明研究台是开启的  
-所以造出文明研究台就是你的目标
+En la Guía de tecnología Slime, hay una categoría llamada"Renacimiento de la civilización"<br>
+Cuando lo abras, encontrarás que la mayoría de los elementos están bloqueados y solo la Estación de Investigación de Civilización está abierta.
+Entonces, tu objetivo es construir una plataforma de investigación de civilizaciones.
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_2.png)
 
-点击文明研究台会出现一个结构预览<br>
-左边的图标表示该机器应该在哪个世界中构建<br>
-右侧的九宫格表示当前显示的物品层，最右侧切换层数 <br>
-中间是该层的内容，你需要根据九宫格内的配方在地上平铺放置方块，(等同于古老的祭坛).
-注意：方块是水平放置的
+Haga clic en Civilization Research Station y aparecerá una vista previa estructural.<br>
+El icono de la izquierda indica en qué mundo debería construirse esta máquina.<br>
+La cuadrícula de nueve cuadrados a la derecha representa la capa de elementos que se muestra actualmente y el lado derecho cambia el número de capa. <br>
+El medio es el contenido de esta capa. Debes colocar los bloques en el suelo de acuerdo con la fórmula de la cuadrícula de nueve cuadrados.，(equivalente a un altar antiguo).
+NOTA: Los bloques se colocan horizontalmente.
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_3.png)
 
-一旦你收集好了材料，并根据配方建造了它，它看起来应该是这样的:
+Una vez que hayas reunido los materiales y lo hayas construido según la receta, debería verse así:
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_4.png)
 
-(你可以使用 `/nexcavate validate` 来查看你摆放的结构是否正确)
+(puedes usar `/nexcavate validate` Para comprobar si la estructura que has colocado es correcta.)
 
-现在，你就可以在文明研究台内，点击未解锁的物品进行解锁了
+Ahora puedes hacer clic en los elementos desbloqueados en Civilization Research Station para desbloquearlos.
 
-解锁完成后，将会打开一个研究屏障，向你展示各种研究选项。(每块彩色玻璃都是可用的研究。)
+Una vez desbloqueada, se abrirá una barrera de investigación que le mostrará varias opciones de investigación.。(Cada pieza de vidriera está disponible para la investigación.。)
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_5.png)
 
-你首先需要解锁 **考古镐**, 这是你收集 **古代零件** 的重要工具<br>
-这也是你唯一能够完成的研究，因为其他的研究都需要古代零件<br>
-单击对应玻璃即可开始研究<br>
-(只有当你单击GUI或重新打开GUI时，进度显示才会更新，这也是它最初看起来进度冻结的原因)
+Primero necesitas desbloquear **pico arqueológico**, Esta es tu colección **partes antiguas** herramientas importantes<br>
+Esta es también la única investigación que puedes completar, ya que todas las demás investigaciones requieren Piezas antiguas.<br>
+Haz clic en el vaso correspondiente para empezar a investigar<br>
+(solo si haces clicGUIo reabrirGUILa pantalla de progreso no se actualizará hasta)
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_6.png)
 
-研究完成后，会出现一条聊天信息，您可以查看它的配方<br>
-一旦你研究了一个配方，你便可以通过Slimefun指南查看它，而无需重新打开文明研究台<br>
-考古镐是在强化工作台上制作的  
+Una vez completada la investigación, aparecerá un mensaje de chat y podrás ver su receta.<br>
+Una vez que hayas investigado una receta, puedesSlimefunGuía para verlo sin volver a abrir el Civilization Research Desk<br>
+El pico arqueológico se fabrica en el banco de trabajo reforzado.
 
-有了全新的工具，你现在可以收集古代零件<br>
-你需要用考古镐在下界采集方块来收集古代零件<br>
-一些区块比其他区块更容易掉落古代零件。特别是猪灵堡垒中的砖块拥有更多的古代零件。
+Con nuevas herramientas, ahora puedes recolectar piezas antiguas.<br>
+Necesitas usar un pico arqueológico para recolectar bloques en el abismo para recolectar partes antiguas.<br>
+Es más probable que algunos bloques dejen caer piezas antiguas que otros. En particular, los ladrillos de la Fortaleza Piglin tienen partes más antiguas.
 
-一旦你收集了一些零件，你可以用它们在文明研究台中研究更多的项目，例如装配机、物品架、零件提取机
+Una vez que hayas recolectado algunas piezas, podrás usarlas para investigar más artículos en el Banco de investigación de Civilization, como ensambladores, estantes de artículos y extractores de piezas.
 
-装配机搭建方法与文明研究台同理
+El método de construcción de la máquina de ensamblaje es el mismo que el de la Estación de Investigación de Civilización.
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_7.png)
 
-若想要组装一个零件(如一些配方中所需的物品架)，须将配方按要求摆放在装配机的中央。<br>
-右击錾制石英块激活装配机
+Si quieres montar una pieza(Rejillas para artículos según se requiera en algunas recetas)，La fórmula debe colocarse en el centro de la máquina de ensamblaje según sea necesario.。<br>
+Haga clic derecho en el bloque de cuarzo cincelado para activar el ensamblador
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_8.png)
 
-物品架用于在装配器中放置不可放置的物品，例如古代零件<br>
-你需要将古代零件放入物品架来制作一些物品<br>
-将物品架放置在装配机中的正确位置，然后右击以放置物品
+Los estantes para artículos se utilizan para contener artículos que no se pueden colocar en el ensamblador, como piezas antiguas.<br>
+Necesitas colocar piezas antiguas en el estante de artículos para crear algunos artículos.<br>
+Coloque el estante de artículos en la ubicación correcta en la máquina de ensamblaje y haga clic derecho para colocar el artículo.
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_9.png)
 
 ![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/tutorial_10.png)
 
-黑石提取机只能放置在下界中，且需要通电<br>
-还需要一个岩浆源在它的正下方<br>
-一旦所有的条件得到满足，它将开始生成黑石<br>
-黑石可以被输入一个货运网络
+Los extractores de piedra negra solo se pueden colocar en el Nether y requieren energía.<br>
+También necesita una fuente de magma directamente debajo.<br>
+Una vez que se cumplan todas las condiciones, comenzará a generar piedra negra.<br>
+Blackstone se puede importar a una red de transporte de mercancías
 
-零件提取机同理<br>
-它会以缓慢的速度将黑石转化为古代零件(所以你需要多个零件提取机来跟上一次研究)。
+Igual que la máquina de extracción de piezas.<br>
+Poco a poco convertirá Blackstone en piezas antiguas.(Por lo tanto, necesita varios extractores de piezas para mantenerse al día con las últimas investigaciones.)。
 
 
-这允许你自动化生产古代零件，并最终建立**文明研究实验室**.<br>
-其余的机器应该是不言自明的，具有类似的机制<br>
+Esto le permite automatizar la producción de piezas antiguas y, en última instancia, construir**Laboratorio de investigación de civilizaciones**.<br>
+El resto de máquinas deberían explicarse por sí solas, con mecanismos similares.<br>
 
-你的目标就是制作**文明核心**, 这时你将能重新复兴古代文明
+Tu objetivo es hacer**núcleo de civilización**, En este momento podrás revivir la civilización antigua.

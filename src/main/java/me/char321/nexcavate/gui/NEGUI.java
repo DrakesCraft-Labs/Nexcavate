@@ -1,8 +1,8 @@
 package me.char321.nexcavate.gui;
 
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuide;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuide;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.char321.nexcavate.Nexcavate;
 import me.char321.nexcavate.items.ItemStacks;
 import me.char321.nexcavate.research.Research;
@@ -64,9 +64,9 @@ public class NEGUI {
 
     public static void openRecipe(Player player, Research research) {
         if (research.getItem() instanceof NEStructure neStructure) {
-            openStructure(player, neStructure.getStructure(), new CustomItemStack(Material.STRUCTURE_BLOCK, "&5建造", "&7如图所示，将当前结构的所有物品层放置在当前世界中"));
+            openStructure(player, neStructure.getStructure(), new CustomItemStack(Material.STRUCTURE_BLOCK, "&5Hospedarse", "&7Coloque todas las capas de elementos de la estructura actual en el mundo actual como se muestra"));
         } else if (research.getItem() instanceof NEAssembly neAssembly) {
-            openStructure(player, neAssembly.getStructure(), new CustomItemStack(ItemStacks.BASIC_ASSEMBLER, "&5装配", "&7将组件的所有物品层放入组装机中", "&7并激活它来组装该物品"));
+            openStructure(player, neAssembly.getStructure(), new CustomItemStack(ItemStacks.BASIC_ASSEMBLER, "&5asamblea", "&7Coloque todas las capas de elementos del componente en la máquina de ensamblaje.", "&7y actívalo para ensamblar el artículo."));
         } else {
             //fallback
             PlayerProfile.get(player, profile -> {

@@ -1,9 +1,9 @@
 package me.char321.nexcavate.slimefun;
 
-import io.github.thebusybiscuit.slimefun4.api.items.groups.FlexItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.groups.FlexItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideMode;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.char321.nexcavate.Nexcavate;
 import me.char321.nexcavate.gui.NEGUI;
 import org.bukkit.Material;
@@ -15,7 +15,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 public class NEItemGroup extends FlexItemGroup {
     public static void init() {
-        ItemStack groupitem = new CustomItemStack(Material.BLACKSTONE, "&5文明复兴", "&7开始你的重建文明之旅");
+        ItemStack groupitem = new CustomItemStack(Material.BLACKSTONE, "&5Renacimiento de la civilización", "&7Comienza tu viaje para reconstruir la civilización.");
         NEItemGroup group = new NEItemGroup(Nexcavate.key("nexcavate"), groupitem);
         group.register(Nexcavate.instance());
     }

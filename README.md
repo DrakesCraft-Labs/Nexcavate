@@ -1,43 +1,27 @@
-*After exploring the Nether for a bit, you realize that there was something missing about it.*<br>
-*You're not too sure what that something is yet, so you decide to construct a research table with the resources you've collected along your journey to lay down your observations.*<br>
-*To your surprise, a mysterious voice pierces the air.*
+<p align="center"><img src="docs/banner.svg" alt="Nexcavate" width="100%"></p>
 
 # Nexcavate
 
-A Slimefun Addon about rebuilding the ancient civilization.<br>
-Begin the reconstruction by researching and analyzing its traces.<br>
-My entry for the 2022 Addon Jam.
+Excavación y minería para Slimefun, adaptado al ecosistema Slimefun de **DrakesCraft** (Paper/Purpur 1.21.11, Java 21).
 
-*For the Addon Jam, some adjustments have been made to the items for a quicker judging process.*
+## Qué añade
 
-For a tutorial/walkthrough, see [TUTORIAL.md](https://github.com/qwertyuioplkjhgfd/Nexcavate/blob/main/TUTORIAL.md)
+Herramientas y máquinas de excavación por área.
 
-## Commands
+## Qué cambiamos
 
-`/nexcavate validate`
+Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
+DrakesCraft (Paper/Purpur 1.21.11, Java 21). Los cambios comunes a todos nuestros ports son:
 
-This command is useful if you built a structure but it does not work.<br>
-Run the command while looking at the "centerpiece" of the structure, facing the direction the recipe is displayed (where up in the GUI is forwards for you)<br>
-The "centerblock" of a structure is the block you interact with (such as the cartography table for Research Table), or the very bottom back left block of an assembly (you may have to remove a gray stained glass to point towards this block for some assemblies)<br>
-Because of this, if you cannot directly look at the centerpiece of an assembly in the correct orientation, you can optionally specify the orientation you want to validate the structure.<br>
-The orientation argument is an int as follows:
-0. facing -z
-1. facing +x
-2. facing +z
-3. facing -x
+**Los paquetes de Slimefun.** El core de DrakesCraft está repaquetado, así que un addon de fuera
+no encuentra nada hasta que se remapean sus imports.
 
-Once you run the command, it will show you the first block in the structure that is incorrect.
+**La telemetría, fuera.** bStats abría una conexión a bstats.org cada pocos minutos con datos del
+servidor. Se quitaron las llamadas, los imports y la dependencia — no se sustituyó por un stub
+inerte, que dejaría el código en pie aparentando que hay telemetría.
 
-![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/command_1.png)
+**Los autoactualizadores, desarmados.** Este jar está recompilado contra nuestro Slimefun; si se
+bajara el de upstream encima, dejaría de cargar. Las actualizaciones se despliegan por SFTP.
 
-*Running `/nex validate NE_RESEARCH_TABLE` at this position would yield "Structure is valid!", since I am facing forward relative to the recipe and am looking at the centerpiece (the cartography table)*
-
-
-![](https://raw.githubusercontent.com/qwertyuioplkjhgfd/Nexcavate/main/img/command_2.png)
-
-*Trying to run `/nex validate NE_RESEARCH_TABLE` would yield false results, since my orientation is turned it will try to validate it as if the research table is pointing that way.*
-*Instead, the command to run should be `/ne validate NE_RESEARCH_TABLE 0` (or the correct orientation of the structure based on the table)*
-
-`/nexcavate research`
-
-This command will grant all researches to the sender.
+**El rastreador de fallos apunta aquí**, no al repositorio original: un fallo de esta versión
+casi nunca es un fallo de allí.

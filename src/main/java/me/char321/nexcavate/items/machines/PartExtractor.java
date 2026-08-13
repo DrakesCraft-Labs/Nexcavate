@@ -59,7 +59,7 @@ public class PartExtractor extends NEAssembly implements MachineProcessHolder<Cr
             @Override
             public void onPlayerPlace(@Nonnull BlockPlaceEvent e) {
                 if (!e.getBlock().getWorld().getEnvironment().equals(World.Environment.NETHER)) {
-                    e.getPlayer().sendMessage(ChatColor.RED + "请将机器放置于下界中");
+                    e.getPlayer().sendMessage(ChatColor.RED + "Coloca la máquina en el Nether");
                     e.setCancelled(true);
                     Utils.removeBlock(e.getBlock(), true);
                 }

@@ -27,15 +27,15 @@ public class NexcavateCommand implements CommandExecutor {
                     if (sender.hasPermission("nexcavate.command."+subcmd.getCommandName())) {
                         return subcmd.onExecute(sender, command, label, args);
                     } else {
-                        sender.sendMessage("您没有使用该指令的权限");
+                        sender.sendMessage("No tienes permiso para usar este comando");
                         return false;
                     }
                 }
             }
-            sender.sendMessage("未知的子命令！可用的子命令有: " + subcommands.stream().map(SubCommand::getCommandName).collect(Collectors.joining(", ")));
+            sender.sendMessage("¡Subcomando desconocido! Los disponibles son: " + subcommands.stream().map(SubCommand::getCommandName).collect(Collectors.joining(", ")));
             return false;
         }
-        sender.sendMessage("文明复兴 版本:" + Nexcavate.instance().getDescription().getVersion());
+        sender.sendMessage("Renacer de la civilización, versión:" + Nexcavate.instance().getDescription().getVersion());
         return true;
     }
 

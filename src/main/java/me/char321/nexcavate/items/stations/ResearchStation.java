@@ -51,43 +51,43 @@ public class ResearchStation extends NEStructure implements Listener {
             player.playSound(player, Sound.AMBIENT_SOUL_SAND_VALLEY_MOOD, 1, 1);
             player.playSound(player, Sound.AMBIENT_CRIMSON_FOREST_MOOD, 1, 1);
             player.playSound(player, Sound.AMBIENT_NETHER_WASTES_MOOD, 1, 1);
-            player.sendMessage(Utils.color("&d成功构建 &e研究台&d 你感觉到一股巨大的能量从下界深处散发出来"));
+            player.sendMessage(Utils.color("&dHas construido la &emesa de investigación&d. Notas una energía enorme subiendo desde lo hondo del Nether"));
         }, () -> {
-            player.sendMessage(Utils.color("&d令你惊讶的是，一个神秘的声音穿透了空气"));
-        }, () -> {
-            player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o我们被困在这里太久了..."));
-        }, () -> {
-            player.sendMessage(Utils.color("&d你变得困惑&f&o什么? &r&d你在自言自语"));
+            player.sendMessage(Utils.color("&dPara tu sorpresa, una voz misteriosa atraviesa el aire"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o请帮帮我们，我们需要你来重建我们曾经伟大的文明。"));
+            player.sendMessage(Utils.color("&7&oLlevamos atrapados aquí demasiado tiempo..."));
+        }, () -> {
+            player.sendMessage(Utils.color("&dTe quedas desconcertado. &f&o¿Qué? &r&dHablas solo"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o我相信你已经见过我们的一些堡垒遗迹了"));
+            player.sendMessage(Utils.color("&7&oAyúdanos, por favor. Te necesitamos para reconstruir la civilización que fuimos."));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o它们曾经是高度发达文明的家园。"));
+            player.sendMessage(Utils.color("&7&oSupongo que ya habrás visto alguna de nuestras fortalezas en ruinas"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o能够实现现在不可想象的事情"));
+            player.sendMessage(Utils.color("&7&oFueron el hogar de una civilización muy avanzada."));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o在&kGreat Abcdefghi&7&o后它们变成了废墟"));
+            player.sendMessage(Utils.color("&7&oCapaces de lograr cosas hoy impensables"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o这个物种，连同它所有的文明，都被从下界中抹去了"));
+            player.sendMessage(Utils.color("&7&oTras el &kGreat Abcdefghi&7&o quedaron reducidas a ruinas"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o一些痕迹仍然存在于剩余结构的&e墙壁&7&o上，但对于物种来说是不可恢复的"));
+            player.sendMessage(Utils.color("&7&oEsta especie, y toda su civilización, fue borrada del Nether"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o此文明重现其伟大的唯一方法是使用一种特殊的工具，但这种工具只能用他们无法获得的材料来制作"));
+            player.sendMessage(Utils.color("&7&oQuedan rastros en los &emuros&7&o de lo que sigue en pie, pero para su especie ya no hay vuelta atrás"));
         }, () -> {
             player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
-            player.sendMessage(Utils.color("&7&o一个&e考古镐&7&o, 它可以提取猪灵堡垒周围方块中的古代零件"));
+            player.sendMessage(Utils.color("&7&oLa única forma de devolverles su grandeza es una herramienta muy concreta, hecha con materiales que ellos nunca pudieron conseguir"));
         }, () -> {
-            player.sendMessage(Utils.color("&d你还没来得及问任何问题，那个声音已经离开了"));
+            player.playSound(player, Sound.ENTITY_ZOMBIFIED_PIGLIN_DEATH, 1, 0.5f);
+            player.sendMessage(Utils.color("&7&oUn &epico arqueológico&7&o, capaz de extraer piezas antiguas de los bloques que rodean las fortalezas piglin"));
+        }, () -> {
+            player.sendMessage(Utils.color("&dAntes de que te dé tiempo a preguntar nada, la voz se ha ido"));
         }, () -> {
             NEGUI.openResearchScreen(player, tier);
         }

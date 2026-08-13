@@ -29,7 +29,7 @@ public class ResearchScreenHandler implements NEGUIInventoryHolder {
 
     public ResearchScreenHandler(UUID player) {
         this.player = player;
-        this.inventory = Bukkit.createInventory(this, 54, "文明复兴研究进度");
+        this.inventory = Bukkit.createInventory(this, 54, "Progreso de la investigación");
     }
 
     @Override
@@ -60,15 +60,15 @@ public class ResearchScreenHandler implements NEGUIInventoryHolder {
         if (research.equals(playerProgress.getCurrentResearch())) {
             PlayerProgress.ResearchProgress progress = playerProgress.getCurrentResearchProgress();
             res.setType(Material.YELLOW_STAINED_GLASS_PANE);
-            ItemMeta im = Utils.appendLore(res, "", "&7研究进度: &7" + progress.currentProgress());
+            ItemMeta im = Utils.appendLore(res, "", "&7Progreso de la investigación: &7" + progress.currentProgress());
             im.getEnchants().forEach((enchantment, i) -> im.removeEnchant(enchantment));
             res.setItemMeta(im);
         } else if (!playerProgress.isResearched(research)) {
             if (research.getTier() > currentTier) {
-                res = new CustomItemStack(Material.BARRIER, "&4&l锁定", "&7A &f" + Nexcavate.instance().getRegistry().getResearchStation(research.getTier()).getItemName(), "&7is required to research this item.");
+                res = new CustomItemStack(Material.BARRIER, "&4&lBloqueado", "&7A &f" + Nexcavate.instance().getRegistry().getResearchStation(research.getTier()).getItemName(), "&7is required to research this item.");
             } else {
                 res.setType(Material.GRAY_STAINED_GLASS_PANE);
-                ItemMeta im = Utils.appendLore(res, "", "&7研究耗费: &f" + research.getCost() + "古代零件", "&7时间: &f" + research.getTime() + " 分钟");
+                ItemMeta im = Utils.appendLore(res, "", "&7Coste de la investigación: &f" + research.getCost() + "Pieza antigua", "&7Tiempo: &f" + research.getTime() + " minutos");
                 im.getEnchants().forEach((enchantment, i) -> im.removeEnchant(enchantment));
                 res.setItemMeta(im);
             }
@@ -90,9 +90,9 @@ public class ResearchScreenHandler implements NEGUIInventoryHolder {
             NEGUI.openRecipe(player1, researchSlots.get(e.getRawSlot()));
         } else if (currentTier >= research.getTier()) {
             if (playerProgress.getCurrentResearchProgress() != null) {
-                e.getWhoClicked().sendMessage(Utils.color("&c你已经在研究 &f" + playerProgress.getCurrentResearch().getName() + " &c!"));
+                e.getWhoClicked().sendMessage(Utils.color("&cYa estás investigando &f" + playerProgress.getCurrentResearch().getName() + " &c!"));
             } else if (!canAfford(player1, research)) {
-                e.getWhoClicked().sendMessage(Utils.color("&c您无法为 " + research.getCost() + " 交付足够的古代零件"));
+                e.getWhoClicked().sendMessage(Utils.color("&cNo puedes hacerlo para " + research.getCost() + " entrega suficientes piezas antiguas"));
             } else {
                 consumeParts(player1, research);
                 playerProgress.beginResearch(research);

@@ -23,13 +23,13 @@ public class ValidateCommand implements SubCommand {
     @Override
     public boolean onExecute(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player player)) {
-            sender.sendMessage("您只能以玩家的形式执行该指令");
+            sender.sendMessage("Este comando solo puede usarlo un jugador");
             return false;
         }
 
         if (args.length < 2) {
-            player.sendMessage("使用方法: /nexcavate validate <结构> [<方位>]");
-            player.sendMessage("有关如何使用该命令的更多详细说明，请参见wiki");
+            player.sendMessage("Uso: /nexcavate validate <estructura> [<orientación>]");
+            player.sendMessage("Para más detalles sobre cómo usar el comando, consulta la wiki");
             return false;
         }
 
@@ -38,7 +38,7 @@ public class ValidateCommand implements SubCommand {
             try {
                 orientation = Integer.parseInt(args[2]);
             } catch (NumberFormatException x) {
-                player.sendMessage("使用方法: /nexcavate validate <结构> [<方位>]");
+                player.sendMessage("Uso: /nexcavate validate <estructura> [<orientación>]");
             }
         }
 
@@ -50,7 +50,7 @@ public class ValidateCommand implements SubCommand {
             validate(player, structure.getStructure(), orientation);
             return true;
         } else {
-            player.sendMessage("您没有输入具有结构的有效物品");
+            player.sendMessage("No has indicado un objeto válido con estructura");
             return true;
         }
     }
@@ -62,13 +62,13 @@ public class ValidateCommand implements SubCommand {
 
         Block target = player.getTargetBlockExact(4, FluidCollisionMode.NEVER);
         if (target == null) {
-            player.sendMessage("您没有看向固体方块");
+            player.sendMessage("No estás mirando a un bloque sólido");
         }
         String incorrect = structure.getIncorrect(target.getLocation(), orientation);
         if (incorrect != null) {
-            player.sendMessage("在此发现非法方块" + incorrect);
+            player.sendMessage("Se ha encontrado un bloque que no corresponde" + incorrect);
         } else {
-            player.sendMessage("结构有效!");
+            player.sendMessage("¡La estructura es válida!");
         }
     }
 

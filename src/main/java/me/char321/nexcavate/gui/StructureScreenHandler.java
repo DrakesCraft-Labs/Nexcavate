@@ -1,6 +1,6 @@
 package me.char321.nexcavate.gui;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.char321.nexcavate.structure.Structure;
 import me.char321.nexcavate.structure.piece.StructurePiece;
 import me.char321.nexcavate.util.Utils;
@@ -70,7 +70,7 @@ public class StructureScreenHandler implements NEGUIInventoryHolder {
             ItemStack layerItem = new CustomItemStack(Material.SNOW, "&e层 " + layernum);
             if (layernum - 1 == layer) {
                 ItemMeta im = layerItem.getItemMeta();
-                im.addEnchant(Enchantment.DURABILITY, 1, true);
+                im.addEnchant(Enchantment.UNBREAKING, 1, true);
                 im.addItemFlags(ItemFlag.HIDE_ENCHANTS);
                 im.setDisplayName(im.getDisplayName() + ChatColor.GRAY + " (当前层数)");
                 layerItem.setItemMeta(im);

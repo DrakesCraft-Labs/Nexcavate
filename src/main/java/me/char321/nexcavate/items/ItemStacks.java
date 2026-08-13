@@ -1,8 +1,8 @@
 package me.char321.nexcavate.items;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.utils.LoreBuilder;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
@@ -16,13 +16,13 @@ public class ItemStacks {
 
     public static final ItemStack REDISCOVERY_PICKAXE = new SlimefunItemStack("NE_REDISCOVERY_PICKAXE", Material.WOODEN_PICKAXE, "&e考古镐", im -> {
         im.setLore(List.of(ChatColor.GRAY + "提取古代零件的基础工具"));
-        im.addEnchant(Enchantment.DURABILITY, 2, false);
-        im.addEnchant(Enchantment.DIG_SPEED, 1, false);
+        im.addEnchant(Enchantment.UNBREAKING, 2, false);
+        im.addEnchant(Enchantment.EFFICIENCY, 1, false);
     });
     public static final ItemStack PART_DRILL = new SlimefunItemStack("NE_PART_DRILL", Material.DIAMOND_PICKAXE, "&c考古钻头", im -> {
         im.setLore(List.of(ChatColor.GRAY + "提取古代零件的高级工具"));
-        im.addEnchant(Enchantment.DURABILITY, 3, false);
-        im.addEnchant(Enchantment.DIG_SPEED, 5, false);
+        im.addEnchant(Enchantment.UNBREAKING, 3, false);
+        im.addEnchant(Enchantment.EFFICIENCY, 5, false);
         im.addEnchant(Enchantment.MENDING, 1, false);
     });
 

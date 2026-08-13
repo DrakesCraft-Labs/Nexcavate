@@ -1,10 +1,10 @@
 package me.char321.nexcavate.structure.piece;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
+import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
 import me.char321.nexcavate.items.misc.ItemHolder;
 import me.char321.nexcavate.util.Utils;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 

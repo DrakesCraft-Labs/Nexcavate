@@ -1,6 +1,6 @@
 package me.char321.nexcavate;
 
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
 import me.char321.nexcavate.command.NexcavateCommand;
 import me.char321.nexcavate.gui.NEGUI;
 import me.char321.nexcavate.items.Items;
@@ -72,7 +72,7 @@ public final class Nexcavate extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/qwertyuioplkjhgfd/Nexcavate/issues";
+        return "https://github.com/DrakesCraft-Labs/Nexcavate/issues";
     }
 
     public NexcavateRegistry getRegistry() {

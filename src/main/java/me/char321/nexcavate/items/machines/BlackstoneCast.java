@@ -58,7 +58,7 @@ public class BlackstoneCast extends NEAssembly implements EnergyNetComponent {
             @Override
             public void onPlayerPlace(@Nonnull BlockPlaceEvent e) {
                 if (!e.getBlock().getWorld().getEnvironment().equals(World.Environment.NETHER)) {
-                    e.getPlayer().sendMessage(ChatColor.RED + "This machine won't work here. Try somewhere in the Nether perhaps?");
+                    e.getPlayer().sendMessage(ChatColor.RED + "Esta maquina no funciona aqui. Prueba en el Nether.");
                     e.setCancelled(true);
                     Utils.removeBlock(e.getBlock(), true);
                 }

@@ -155,7 +155,7 @@ public class Items {
         PART_DRILL.register();
 
         StructurePiece any = new AnyStructurePiece();
-        StructurePiece extension = u(new CustomItemStack(POLISHED_BLACKSTONE_BRICKS, "Piezas de la máquina de montaje", "&7Cualquier pieza de ensamblador o ladrillos Blackstone molidos"), mat(POLISHED_BLACKSTONE_BRICKS));
+        StructurePiece extension = u(new CustomItemStack(POLISHED_BLACKSTONE_BRICKS, "Piezas de la máquina de montaje", "&7Cualquier pieza de montaje o ladrillos de piedra negra pulida"), mat(POLISHED_BLACKSTONE_BRICKS));
         BASIC_ASSEMBLER = new Assembler(ItemStacks.BASIC_ASSEMBLER, "NE_BASIC_ASSEMBLER", new Structure(new StructurePiece[][][]{
                 {
                         {extension, extension, extension, extension, extension},

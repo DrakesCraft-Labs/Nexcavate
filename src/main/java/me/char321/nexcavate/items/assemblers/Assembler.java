@@ -55,12 +55,12 @@ public class Assembler extends NEStructure implements Listener {
 
     private void handleClick(Player player, int orientation, Block center) {
         if (netherRequired && !player.getWorld().getEnvironment().equals(World.Environment.NETHER)) {
-            player.sendMessage(ChatColor.RED + "Coloque la máquina en el Nether.");
+            player.sendMessage(ChatColor.RED + "Esta maquina solo funciona en el Nether.");
             return;
         }
 
         if (!tryAssemble(orientation, center)) {
-            player.sendMessage(ChatColor.RED + "No se reconoce la receta en la máquina de ensamblaje");
+            player.sendMessage(ChatColor.RED + "La maquina de montaje no reconoce esa combinacion de piezas.");
         }
     }
 

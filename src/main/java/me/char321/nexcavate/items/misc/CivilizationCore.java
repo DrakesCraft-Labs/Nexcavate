@@ -38,10 +38,10 @@ public class CivilizationCore extends NEAssembly {
                     player.sendMessage(Utils.color("&9&o¿Qué? ¿Quién me despertó de mi sueño profundo?？"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_ADMIRING_ITEM, 1, 0.5f);
-                    player.sendMessage(Utils.color("&a&oetc....¿qué es eso??"));
+                    player.sendMessage(Utils.color("&a&o...¿que es eso?"));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
-                    player.sendMessage(Utils.color("&9&odice&e" + player.getName() + ""));
+                    player.sendMessage(Utils.color("&9&odice&e" + player.getName()));
                 }, () -> {
                     player.playSound(player, Sound.ENTITY_PIGLIN_RETREAT, 1, 0.5f);
                     player.sendMessage(Utils.color("&9&oellos reconstruyeron...nuestra civilización. ¿Son esos nuestros trabajadores de la construcción??"));

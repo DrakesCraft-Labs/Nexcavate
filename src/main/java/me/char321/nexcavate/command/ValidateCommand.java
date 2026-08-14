@@ -50,7 +50,7 @@ public class ValidateCommand implements SubCommand {
             validate(player, structure.getStructure(), orientation);
             return true;
         } else {
-            player.sendMessage("No ingresaste un artículo válido con estructura");
+            player.sendMessage("Ese objeto no tiene ninguna estructura asociada.");
             return true;
         }
     }

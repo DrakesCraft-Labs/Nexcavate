@@ -30,15 +30,15 @@ public class ItemStacks {
     public static final ItemStack PART_EXTRACTOR = new SlimefunItemStack("NE_PART_EXTRACTOR", Material.RED_NETHER_BRICKS, "&emáquina de extracción de piezas", "&7Extrayendo lentamente piezas antiguas de piedra negra", "", "&7Debe colocarse en el Nether", "", LoreBuilder.powerPerSecond(12));
     public static final ItemStack PART_EXTRACTOR_2 = new SlimefunItemStack("NE_PART_EXTRACTOR_2", Material.CHISELED_NETHER_BRICKS, "&dMáquina de extracción de piezas avanzada", "&7Extraiga piezas antiguas de Blackstone más rápido", "", "&7Debe colocarse en el Nether", "", LoreBuilder.powerPerSecond(24));
 
-    public static final ItemStack ITEM_HOLDER = new SlimefunItemStack("NE_ITEM_HOLDER", Material.CYAN_STAINED_GLASS, "&fEstante de artículos", "&7almacenar algunos artículos", "&7Los artículos en el estante de artículos se pueden usar en la máquina de ensamblaje.");
+    public static final ItemStack ITEM_HOLDER = new SlimefunItemStack("NE_ITEM_HOLDER", Material.CYAN_STAINED_GLASS, "&fSoporte de piezas", "&7Sujeta una pieza para el montaje", "&7Lo que dejes en el soporte lo usa la maquina de montaje.");
 
-    public static final ItemStack BASIC_ASSEMBLER = new CustomItemStack(Material.CHISELED_QUARTZ_BLOCK, "&eMaquina de montaje basica", "&7Montaje gama pequeña3x3x3bloques dentro");
-    public static final ItemStack ADVANCED_ASSEMBLER = new CustomItemStack(Material.QUARTZ_PILLAR, "&dMáquina de montaje avanzada", "&7Amplia gama de montaje.4x4x4bloques dentro", "&8Sólo funciona en el Nether");
+    public static final ItemStack BASIC_ASSEMBLER = new CustomItemStack(Material.CHISELED_QUARTZ_BLOCK, "&eMaquina de montaje basica", "&7Monta piezas dentro de un area de 3x3x3 bloques");
+    public static final ItemStack ADVANCED_ASSEMBLER = new CustomItemStack(Material.QUARTZ_PILLAR, "&dMáquina de montaje avanzada", "&7Monta piezas dentro de un area de 4x4x4 bloques", "&8Sólo funciona en el Nether");
 
     public static final ItemStack ANCIENT_PART = new SlimefunItemStack("NE_ANCIENT_PART", Material.NETHER_BRICK, "&epartes antiguas", "&7Reliquias de civilizaciones antiguas.");
     public static final ItemStack UPGRADE_CORE = new SlimefunItemStack("NE_UPGRADE_CORE", Material.TARGET, "&eNúcleo de actualización antiguo", "&7Productos sobrantes de la civilización avanzada.");
 
-    public static final ItemStack CIVILIZATION_CORE = new SlimefunItemStack("NE_CIVILIZATION_CORE", Material.CONDUIT, "&bnúcleo de civilización", "&dContiene elementos de la antigua civilización del inframundo.", "&dsolía despertar &kasdfg hijklmn &dcivilización");
+    public static final ItemStack CIVILIZATION_CORE = new SlimefunItemStack("NE_CIVILIZATION_CORE", Material.CONDUIT, "&bnúcleo de civilización", "&dGuarda objetos de la antigua civilizacion del Nether.", "&dsolía despertar &kasdfg hijklmn &dcivilización");
 
     public static class Menu {
         public static final ItemStack BLACK = new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE, " ");

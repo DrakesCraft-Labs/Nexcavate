@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Nexcavate/main/docs/banner.svg" width="100%" alt="NEXCAVATE Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Nexcavate/main/banner.svg" width="100%" alt="NEXCAVATE Animated Banner" />
 </p>
 
 # Nexcavate
